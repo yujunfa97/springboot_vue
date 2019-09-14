@@ -6,9 +6,6 @@
     <modules>
         <module>vue-boot</module>
         <module>vue-api</module>
-        <module>vue-dao</module>
-        <module>vue-dao</module>
-        <module>vue-service</module>
     </modules>
 
     <parent>
@@ -30,20 +27,21 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- SwaggerUI引入 -->
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-tomcat</artifactId>
-                <scope>provided</scope>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>2.9.2</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <scope>test</scope>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>2.9.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.9.8</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
